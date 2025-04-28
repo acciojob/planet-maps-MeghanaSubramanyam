@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Planet Maps</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Image with usemap -->
+  <img src="solarsystem.jpg" alt="Solar System" usemap="#solarsystemmap">
+
+  <!-- Map -->
+  <map name="solarsystemmap">
+
+    <!-- Sun (Rectangle) -->
+    <area shape="rect" coords="100,100,200,200" href="sun.htm" alt="Sun">
+
+    <!-- Planets (Circle) -->
+    <area shape="circle" coords="250,120,20" href="mercury.htm" alt="Mercury">
+    <area shape="circle" coords="300,130,25" href="venus.htm" alt="Venus">
+    <area shape="circle" coords="360,140,30" href="earth.htm" alt="Earth">
+    <area shape="circle" coords="420,150,28" href="mars.htm" alt="Mars">
+    <area shape="circle" coords="500,160,40" href="jupiter.htm" alt="Jupiter">
+    <area shape="circle" coords="600,170,35" href="saturn.htm" alt="Saturn">
+    <area shape="circle" coords="700,180,30" href="uranus.htm" alt="Uranus">
+    <area shape="circle" coords="800,190,30" href="neptune.htm" alt="Neptune">
+
+    <!-- Dwarf planets (like Pluto, etc.) -->
+    <area shape="circle" coords="900,200,15" href="pluto.htm" alt="Pluto">
+    <area shape="circle" coords="950,210,15" href="ceres.htm" alt="Ceres">
+    <area shape="circle" coords="1000,220,15" href="eris.htm" alt="Eris">
+    <area shape="circle" coords="1050,230,15" href="makemake.htm" alt="Makemake">
+    <area shape="circle" coords="1100,240,15" href="haumea.htm" alt="Haumea">
+
+  </map>
+
+  <script type="text/javascript" src="./script.js"></script>
 
 </body>
-
 </html>
